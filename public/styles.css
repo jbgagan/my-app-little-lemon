@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary-color:#495e57;
+    --primary-color2:#f4ce14;
+    --secondary-color:#ee9972;
+    --secondary-color2:#fbdabb;
+    --highlight-color:#edefee;
+    --highlight-color2:#333333;
+}
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+
+}
+a {
+    text-decoration: none;
+    color: var(--highlight-color2);
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:30px;
+
+}
+.intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--primary-color);
+    align-items: center;
+    position: relative;
+    overflow: visible;
+    margin: 30px;
+
+    
+}
+.intro img{
+    width: 400px;
+    height: 370px;
+    position:absolute;
+    top: 30px;
+    right: 300px;
+    border-radius: 12px;
+
+    
+}
+.content{
+    
+    margin-left: 300px;
+    margin-top: 30px;
+    width: 200px;
+
+}
+.content h1 {
+    margin-bottom: 0;
+    color: var(--primary-color2);
+}
+ .content h2{
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: var(--highlight-color);
+}
+.content p{
+    color: var(--highlight-color);
+    margin-bottom: 5px;
+}
+.content button{
+    border-radius: 12px;
+    background-color: var(--primary-color2);
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 15px 20px;
+    font-weight: bold;
+    border: none;
+    color: var(--highlight-color2);
+    
+}
+
+.highlight {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 170px;
+
+}
+.highlight h1{
+    margin-right: 190px;
+    color: var(--highlight-color2);
+}
+.highlight button{
+    background-color: var(--primary-color2);
+    color: var(--highlight-color2);
+    border-radius: 10px;
+    padding: 15px 20px;
+    font-weight: bold;
+    border: none;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    margin-left: 165px;
+    gap: 30px;
+    
+    
+}
+.cards img{
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-bottom: 10px;
+}
+.greek,.brusc,.lemon{
+    background-color: rgb(240, 237, 237);
+     border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+.span{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+
+}
+.item {
+    font-weight: bold;
+    color: var(--highlight-color2);
+}
+.price {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.cards p{
+    padding: 20px 30px;
+}

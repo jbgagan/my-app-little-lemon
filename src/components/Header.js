@@ -1,9 +1,12 @@
+import Nav from "./Nav";
 function Header (){
     return (
         <>
         <header>
             
-        </header>
+            <Nav />
+            
+                    </header>
         </>
     );
 };
