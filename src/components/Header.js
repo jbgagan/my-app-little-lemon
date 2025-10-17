@@ -1,13 +1,9 @@
-import Nav from "./Nav";
-function Header (){
-    return (
-        <>
-        <header>
-            
-            <Nav />
-            
-                    </header>
-        </>
-    );
-};
+import NavBar from "./NavBar";
+function Header() {
+  return (
+    <header>
+      <NavBar />
+    </header>
+  );
+}
 export default Header;
