@@ -1,0 +1,51 @@
+.bookingform{
+    background-color: var(--primary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    width: 90vw;
+    margin: auto;
+    gap:30px;
+    justify-items: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.bookingform h1 {
+    grid-column: 1/-1;
+  color: var(--primary-color2);
+  font-size: 3.3em;
+  margin: 30px;
+  text-align: center;
+
+}
+.left-column,.right-column{
+    display: flex;
+    flex-direction: column;
+   gap: 10px;
+    width: 70%;
+
+}
+ 
+.bookingform label {
+  color: var(--highlight-color);
+  font-weight: 600;
+  font-size: 2.1em;
+}
+.bookingform input, .bookingform select{
+    width: 100%;
+    padding: 25px;
+    border-radius: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+input[type="submit"]{
+    grid-column: 1 / -1;
+    padding: 20px;
+    border-radius: 16px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    margin: auto;
+    width: 20%;
+}
