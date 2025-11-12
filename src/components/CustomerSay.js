@@ -1,7 +1,8 @@
+import "./customerSay.css"
 function CustomerSay (){
     return (
         <>
-        <h1>Customer say</h1>
+        <h1>Testimonials</h1>
         </>
     )
 };

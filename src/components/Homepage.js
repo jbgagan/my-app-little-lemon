@@ -1,3 +1,5 @@
+import Cards from "./Cards";
+import CustomerSay from "./CustomerSay";
 function Homepage() {
   return (
     <>
@@ -20,48 +22,11 @@ function Homepage() {
       <section className="cards">
         <Cards />
       </section>
-    </>
-  );
-}
+      <section className="testimonials">
+        <CustomerSay />
 
-const Cards = () => {
-  return (
-    <section className="cards">
-      <div className="greek">
-        <img src="/icons_assets/greek salad.jpg" alt="greek salad" />
-        <div className="span">
-          <span className="item">Greek salad</span>
-          <span className="price">$12.00</span>
-        </div>
-        <p>
-          The famous greek salad of crispy lettuce, peppers,olives and our
-          Chicago style feta cheese, garnished with crunchy garlic and rosemary
-          croutons.
-        </p>
-      </div>
-      <div className="brusc">
-        <img src="/icons_assets/bruschetta.jpg" alt="bruschetta" />
-        <div className="span">
-          <span className="item">Bruchetta</span>
-          <span className="price">$5.99</span>
-        </div>
-        <p>
-          Our Bruchetta is made from grilled bread that has been smeared with
-          garlic and seasoned with salt and olive oil.
-        </p>
-      </div>
-      <div className="lemon">
-        <img src="/icons_assets/lemon dessert.jpg" alt="lemon dessert" />
-        <div className="span">
-          <span className="item">Lemon Dessert</span>
-          <span className="price">$5.00</span>
-        </div>
-        <p>
-          This comes straight from grandma's recipe book, every last ingredient
-          has been sourced and is as authentic as can be imagined.
-        </p>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 export default Homepage;

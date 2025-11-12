@@ -14,7 +14,9 @@ function BookingForm({ availableTimes, dispatch,submitForm }) {
       guests,
       occasion,
     };
+    if(date && time && guests >=1 && occasion){
     submitForm(formData);
+    }
   };
 
   const handleDateChange = (e) => {
@@ -35,6 +37,7 @@ function BookingForm({ availableTimes, dispatch,submitForm }) {
             id="res-date"
             value={date}
             onChange={handleDateChange}
+            required
           />
           <br />
 
@@ -44,6 +47,7 @@ function BookingForm({ availableTimes, dispatch,submitForm }) {
             id="res-time"
             value={time}
             onChange={(e) => setTime(e.target.value)}
+            required
           >
             <br />
             <option value="">Select time</option>
@@ -63,6 +67,7 @@ function BookingForm({ availableTimes, dispatch,submitForm }) {
             min="1"
             max="10"
             id="guests"
+            required
             value={guests}
             onChange={(e) => setGuests (Number(e.target.value))}
           />
@@ -72,6 +77,7 @@ function BookingForm({ availableTimes, dispatch,submitForm }) {
           <br />
           <select
             id="occasion"
+            required
             value={occasion}
             onChange={(e) => setOccasion(e.target.value)}
           >
@@ -81,7 +87,7 @@ function BookingForm({ availableTimes, dispatch,submitForm }) {
           </select>
         </div>
 
-        <input type="submit" value="Make Your Reservation" />
+        <input type="submit" value="Make Your Reservation" aria-label="On Click" />
       </form>
     </>
   );
