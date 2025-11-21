@@ -1,4 +1,4 @@
-/* global submitAPI, fetchAPI */
+
 import { submitAPI } from "./api";
 import { useReducer } from "react";
 import { Routes, Route, useNavigate } from "react-router-dom";

@@ -1,5 +1,6 @@
 import Cards from "./Cards";
 import CustomerSay from "./CustomerSay";
+import About from "./About";
 function Homepage() {
   return (
     <>
@@ -24,6 +25,10 @@ function Homepage() {
       </section>
       <section className="testimonials">
         <CustomerSay />
+
+      </section>
+      <section>
+        <About />
 
       </section>
     </>
