@@ -1,51 +1,102 @@
-.bookingform{
-    background-color: var(--primary-color);
+.reservation-section{
+    background-color:var(--primary-color);
+    padding: 60px 20px;
+    color: whitesmoke;
+}
+.form-container h1{
+    color: var(--primary-color2);
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.form-container{
+    max-width: 900px;
+    margin: 0 auto;
+}
+.seating-option{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-bottom: 60px;
+    font-size: 1.2rem;
+
+}
+.radio-group{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+.radio-group input[type="radio"]{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 2px solid white;
+     background-color: transparent;
+    transition: background-color 0.2s;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+   
+}
+.radio-group input[type="radio"]:checked{
+    background-color: yellow;
+}
+.form-grid{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    width: 90vw;
-    margin: auto;
-    gap:30px;
-    justify-items: center;
-    align-items: center;
-    padding: 20px;
-
+    gap: 20px 40px;
+    margin-bottom: 40px;
 }
-.bookingform h1 {
-    grid-column: 1/-1;
-  color: var(--primary-color2);
-  font-size: 3.3em;
-  margin: 30px;
-  text-align: center;
-
+.input-group label{
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
 }
-.left-column,.right-column{
-    display: flex;
-    flex-direction: column;
-   gap: 10px;
-    width: 70%;
-
-}
- 
-.bookingform label {
-  color: var(--highlight-color);
-  font-weight: 600;
-  font-size: 2.1em;
-}
-.bookingform input, .bookingform select{
-    width: 100%;
-    padding: 25px;
+.input-group input,select{
+    width: 60%;
+    height: 50%;
     border-radius: 16px;
     text-align: center;
-    box-sizing: border-box;
 }
-input[type="submit"]{
-    grid-column: 1 / -1;
+.submit-button{
+    text-align: center;
     padding: 20px;
     border-radius: 16px;
-    font-size: 1.2em;
+    width: 30%;
+    display: block;
+    margin: auto;
+    
+   
+}
+.img-gallery{
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+    margin: auto;
+    padding: 50px 20px;
+    gap: 20px;
+
+}
+.img-gallery img{
+    width: 350px;
+    height: 250px;
+   
+    border-radius: 16px;
+}
+.submit-button{
+    display: block;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 250px;
+    text-align: center;
+    background-color: var(--primary-color2);
+    font-size: 1.2rem;
     font-weight: bold;
     cursor: pointer;
-    margin: auto;
-    width: 20%;
+    border: none;
 }

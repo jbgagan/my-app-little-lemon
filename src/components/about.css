@@ -9,6 +9,9 @@
   
   
 }
+.about h1,h2{
+  color: var(--highlight-color2);
+}
 .img-stack{
   position: relative;
   width: 350px;

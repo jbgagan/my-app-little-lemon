@@ -8,6 +8,7 @@ function NavBar() {
         <a href="home">
           <img src="./icons_assets/Logo.svg" alt="Logo" className="logo" />
         </a>
+        <div className="nav-bar">
         <ul>
           <li>
             <Link to="/">Home</Link>
@@ -28,6 +29,7 @@ function NavBar() {
             <Link to="/login">Login</Link>
           </li>
         </ul>
+        </div>
       </nav>
     </>
   );

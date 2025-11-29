@@ -1,6 +1,7 @@
 import Cards from "./Cards";
 import CustomerSay from "./CustomerSay";
 import About from "./About";
+import Footer from "./Footer";
 function Homepage() {
   return (
     <>
@@ -30,6 +31,9 @@ function Homepage() {
       <section>
         <About />
 
+      </section>
+      <section>
+        <Footer />
       </section>
     </>
   );
