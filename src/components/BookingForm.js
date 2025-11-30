@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./bookingform.css";
+
 function BookingForm({ availableTimes, dispatch, submitForm }) {
   const [date, setDate] = useState("");
   const [time, setTime] = useState("");
@@ -20,8 +21,9 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
     };
     if (date && seatingOption && time && guests >= 1 && occasion) {
       submitForm(formData);
-      navigate("/userForm");
+      navigate("/userForm",{state:formData});
     }
+    console.log(formData);
   };
 
   const handleDateChange = (e) => {
