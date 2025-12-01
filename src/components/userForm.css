@@ -22,5 +22,42 @@
     height: 70%;
     border-radius: 16px;
     margin-bottom: 10px;
+    
 }
-
+.user-data{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 40px;
+    margin-top: 40px;
+   color: whitesmoke;
+    width: 82%;
+    font-size: 1.2rem;
+}
+.seating {
+    grid-column: 1/-1;
+    text-align: center;
+    width: 82%;
+    font-size: 1.4rem;
+    font-weight: bold;
+  
+}
+.user-feedback{
+    color: whitesmoke;
+    margin-top: 30px;
+}
+textarea{
+    resize: none;
+    margin-top: 10px;
+}
+placeholder {
+    padding: 20px;
+}
+.privacy-policy{
+    display: flex;
+    gap: 10px;
+    color: whitesmoke;
+    align-items: center;
+}
+.privacy-policy a{
+    color: whitesmoke;
+}

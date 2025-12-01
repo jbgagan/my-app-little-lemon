@@ -15,7 +15,7 @@ const {state} = useLocation();
         <>
         <section className="userfill">
             
-                <form className="userform">
+                <form id="confirmation" className="userform">
                     
                         <div className="user-input">
                         <label>First Name</label>
@@ -24,6 +24,7 @@ const {state} = useLocation();
                         type="text"
                         value={firstName}
                         onChange={(e)=>setFirstName(e.target.value)}
+                        placeholder="First Name"
                         
                         />
                         </div>
@@ -34,6 +35,7 @@ const {state} = useLocation();
                         type="text"
                         value={lastName}
                         onChange={(e)=>setLastName(e.target.value)}
+                        placeholder="Last Name"
 
                         />
                         </div>
@@ -43,6 +45,7 @@ const {state} = useLocation();
                         <input 
                             value={email}
                             onChange={(e)=>setEmail(e.target.value)}
+                            placeholder="Email"
 
                         
                         />
@@ -54,34 +57,62 @@ const {state} = useLocation();
     
                         value={phone}
                         onChange={(e)=>setPhone(e.target.value)}
+                        placeholder="Phone"
                         
                         />
                         </div>
                         <div className="user-data">
                             <div className="date">
-                                <p>Date: {state?.date}</p>
+                                <p>Date: <strong>{state?.date}</strong></p>
                             </div>
                             <div className="time">
-                                <p>Time: {state?.time}</p>
+                                <p>Time: <strong>{state?.time}</strong></p>
                             </div>
                             <div className="guests">
-                                <p>{state?.guests} :Guests</p>
+                                <p>Guests: <strong>{state?.guests}</strong></p>
                             </div>
                             <div className="occasion">
-                                <p>{state?.occasion}</p>
+                                <p><strong>{state?.occasion}</strong></p>
                             </div>
                             <div className="seating">
-                                <p>{state?.seatingOption}</p>
+                                <p><strong>{state?.seatingOption}</strong> Seating</p>
                             </div>
+                            
 
                         </div>
-                        <div className="user-comment">
+                        <div className="user-feedback">
+                            <label>Special Requests</label>
+                           <textarea 
+                           rows="10"
+                            cols="42"
+                            id="user-comment"
+                            name="user-comment"
+                            placeholder="comment"
+                            value={comment}
+                            onChange={(e)=>setComment(e.target.value)}
+                           />
+                            
+                           
 
+                        </div>
+                        <div className="privacy-policy">
+                            <input 
+                            type="radio"
+                            
+                            /><span>You agree to our fridendly <a href="privacy.com">privacy policy</a></span>
                         </div>
                 </form>
 
         
         </section>
+         <div className="img-gallery">
+        <img src="./icons_assets/restaurant.jpg" alt="rest-img" />
+        <img src="./icons_assets/chef.jpg" alt="chef-img" />
+        <img src="./icons_assets/restauranfood.jpg" alt="food-img" />
+      </div>
+      <button type="submit" form="confirmation" className="submit-button">
+        Confirm Reservation
+      </button>
         </>
     )
 }

@@ -43,20 +43,20 @@ function BookingForm({ availableTimes, dispatch, submitForm }) {
                 Indoor
                 <input
                   type="radio"
-                  value="indoor"
+                  value="Indoor"
                   name="seating"
                   onChange={(e) => setSeatingOption(e.target.value)}
-                  checked={seatingOption === "indoor"}
+                  checked={seatingOption === "Indoor"}
                 />
               </label>
               <label className="radio-group">
                 Outdoor
                 <input
                   type="radio"
-                  value="outdoor"
+                  value="Outdoor"
                   onChange={(e) => setSeatingOption(e.target.value)}
                   name="seating"
-                  checked={seatingOption === "outdoor"}
+                  checked={seatingOption === "Outdoor"}
                 />
               </label>
             </div>
